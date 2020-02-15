@@ -1,29 +1,16 @@
-import { useMyHook } from './'
+import useCapitalized from "./";
 import { renderHook, act } from "@testing-library/react-hooks";
 
-// mock timer using jest
-jest.useFakeTimers();
 
-describe('useMyHook', () => {
-  it('updates every second', () => {
-    const { result } = renderHook(() => useMyHook());
-
-    expect(result.current).toBe(0);
-
-    // Fast-forward 1sec
-    act(() => {
-      jest.advanceTimersByTime(1000);
+describe("useMyHook", () => {
+  [
+    ["hello", "Hello"],
+    ["hello world", "Hello world"],
+    ["", ""],
+  ].forEach(([testCase, expected]) => {
+    it(`should ${testCase.length === 0 ? "not " : ""}capitalize the first letter of ${testCase.length > 0 ? testCase : "empty string"}`, () => {
+      const { result } = renderHook(() => useCapitalized(testCase));
+      expect(result.current).toEqual(expected);
     });
-
-    // Check after total 1 sec
-    expect(result.current).toBe(1);
-
-    // Fast-forward 1 more sec
-    act(() => {
-      jest.advanceTimersByTime(1000);
-    });
-
-    // Check after total 2 sec
-    expect(result.current).toBe(2);
-  })
-})
+  });
+});

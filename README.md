@@ -7,21 +7,21 @@
 ## Install
 
 ```bash
-npm install --save use-capitalized
+yarn add @taystack/use-capitalized
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import { useMyHook } from 'use-capitalized'
+import useCapitalized from "@taystack/use-capitalized";
 
-const Example = () => {
-  const example = useMyHook()
+const Example = ({ name }) => {
+  const example = useCapitalized(name);
   return (
     <div>{example}</div>
-  )
+  );
 }
 ```
 
