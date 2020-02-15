@@ -1,6 +1,6 @@
 {
   "name": "@taystack/use-capitalized",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Capitalizes and returns a text argument during the render process.",
   "author": "taystack",
   "license": "MIT",
