@@ -2,7 +2,7 @@
 
 > Capitalizes and returns a text argument during the render process.
 
-[![NPM](https://img.shields.io/npm/v/use-capitalized.svg)](https://www.npmjs.com/package/@taystack/use-capitalized) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@taystack/use-capitalized.svg)](https://www.npmjs.com/package/@taystack/use-capitalized) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
