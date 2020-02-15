@@ -1,6 +1,6 @@
 {
   "name": "@taystack/use-capitalized",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Capitalizes and returns a text argument during the render process.",
   "author": "taystack",
   "license": "MIT",
@@ -19,8 +19,7 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
-    "publish": "npm publish --access public"
+    "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
     "react": "^16.9.0"
